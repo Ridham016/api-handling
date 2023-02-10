@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Welcome USER!!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+<ion-list  [inset]="true" lines="full">
+  <ion-item><div class="noob">ID:- {{id}}</div></ion-item>
+  <ion-item><div class="noob">NAME:- {{name}}</div></ion-item>
+  <ion-item><div class="noob">JOB:- {{job}}</div></ion-item>
+  <ion-item><div class="noob">DATE of Creation:- {{createdAt}}</div></ion-item>
+  <ion-item><ion-button size="medium" class="noob" (click)="onUpdate()">UPDATE</ion-button></ion-item>
+  <ion-item><ion-button size="medium" class="noob" (click)="onDelete()">DELETE</ion-button></ion-item>
+</ion-list>
+</ion-card>
+</ion-content>

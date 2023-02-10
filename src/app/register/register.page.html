@@ -1,0 +1,22 @@
+<ion-header>
+
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="title">
+    <h4>Signup</h4>
+    <p>Register with Reqres to get started</p>
+  </div>
+
+  <ion-input placeholder="Name" class="primary-input" [(ngModel)]="name"></ion-input>
+  <ion-input placeholder="JOB" class="primary-input" [(ngModel)]="job"></ion-input>
+
+
+  <div class="ion-margin-top">
+    <ion-button expand="block" (click)="onSubmit()">SIGN UP</ion-button>
+  </div>
+
+  <div class="ion-margin-top ion-text-center">
+    <a (click)="dismiss()">Close</a>
+  </div>
+</ion-content>
