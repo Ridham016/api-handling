@@ -27,18 +27,18 @@ export class ApiCallsService {
     )
    }
    async showLoader() {
-    const loading = await this.loadingController.create({
-      message: 'Please wait...',
-      spinner: 'crescent',
-      duration:3000
-    });
-    await loading.present();
+    // const loading = await this.loadingController.create({
+    //   message: 'Please wait...',
+    //   spinner: 'crescent',
+    //   duration:3000
+    // });
+    // await loading.present();
   }
   async hideLoader() {
-    const loading = await this.loadingController.getTop();
-    if (loading) {
-      await loading.dismiss();
-    }
+    // const loading = await this.loadingController.getTop();
+    // if (loading) {
+    //   await loading.dismiss();
+    // }
   }
   async deleteUser(id:number){
     return this.http.delete(this.baseUrl+id);
